@@ -5,7 +5,7 @@ class PizzaOrderSerializer(serializers.ModelSerializer):
     
     class Meta:
         model= PizzaOrder
-        fields=['order_status', 'size', 'quantity','flavour']
+        fields=['customer','order_status', 'size', 'quantity','flavour']
         # fields='__all__'
 
 class CustomerFeedbackSerializer(serializers.ModelSerializer):

@@ -33,7 +33,7 @@ class PizzaOrder(models.Model):
 class CustomerFeedback(models.Model):
     name = models.CharField(max_length=40)
     order = models.ForeignKey(PizzaOrder,on_delete=models.CASCADE)
-    Feedback = models.TextField(default="the service is good")
+    Feedback = models.TextField(blank=True)
 
     def __str__(self):
         return self.name

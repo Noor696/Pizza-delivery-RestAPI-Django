@@ -6,10 +6,18 @@
 
 **Author: Noor Alkhateeb**
 
-**the App. have Two models**
+* admin : _noor_  / pass: _noornoor_
+* stuff: _bara_  / pass: barabara
+
+* **AllowAny** : I use it in customer feedback , 
+* **IsAuthenticatedOrReadOnly** : I use it to show pizza order to any one , but just the Authenticated user can make edit or create or delete on the list.
+
+* **the App. have Two models**
 1. PizzaOrder
 2. CustomerFeedback
 
+**URLS:**
+> http://127.0.0.1:8011/api/v1/pizzaOrder/CustomersFeedback/1
 
 **Run:**
 
