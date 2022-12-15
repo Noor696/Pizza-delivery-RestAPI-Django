@@ -29,3 +29,11 @@ class PizzaOrder(models.Model):
 
     def __str__(self):
         return f"Order {self.flavour} {self.size} size"
+
+class CustomerFeedback(models.Model):
+    name = models.CharField(max_length=40)
+    order = models.ForeignKey(PizzaOrder,on_delete=models.CASCADE)
+    Feedback = models.TextField(default="the service is good")
+
+    def __str__(self):
+        return self.name

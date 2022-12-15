@@ -6,6 +6,11 @@
 
 **Author: Noor Alkhateeb**
 
+**the App. have Two models**
+1. PizzaOrder
+2. CustomerFeedback
+
+
 **Run:**
 
 > python3 manage.py runserver
