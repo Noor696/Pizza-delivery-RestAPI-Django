@@ -40,3 +40,18 @@ when run this command:
 **Dockerfile** : to build docker image, the data inside it same for all django application.
 
 **docker-compose.yml** : responsible to create the container
+
+* the developer use postgres insted of sqlite -> 
+sqlite : use for small and medium project, 
+the postgres usually uses
+
+
+* the command to convert from sqlite to postgres:
+
+> pip install psycopg2-binary 
+
+* to migrate the data base from sqlite to postgres:
+
+> docker-compose run web python manage.py migrate
+
+> docker-compose run web python manage.py createsuperuser
